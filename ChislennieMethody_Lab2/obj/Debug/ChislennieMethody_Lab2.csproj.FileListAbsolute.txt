@@ -1,0 +1,12 @@
+C:\Users\gekas\Documents\Visual Studio 2015\Projects\ChislennieMethody_Lab1\ChislennieMethody_Lab2\bin\Debug\ChislennieMethody_Lab2.exe.config
+C:\Users\gekas\Documents\Visual Studio 2015\Projects\ChislennieMethody_Lab1\ChislennieMethody_Lab2\bin\Debug\ChislennieMethody_Lab2.exe
+C:\Users\gekas\Documents\Visual Studio 2015\Projects\ChislennieMethody_Lab1\ChislennieMethody_Lab2\bin\Debug\ChislennieMethody_Lab2.pdb
+C:\Users\gekas\Documents\Visual Studio 2015\Projects\ChislennieMethody_Lab1\ChislennieMethody_Lab2\obj\Debug\ChislennieMethody_Lab2.csprojResolveAssemblyReference.cache
+C:\Users\gekas\Documents\Visual Studio 2015\Projects\ChislennieMethody_Lab1\ChislennieMethody_Lab2\obj\Debug\ChislennieMethody_Lab2.exe
+C:\Users\gekas\Documents\Visual Studio 2015\Projects\ChislennieMethody_Lab1\ChislennieMethody_Lab2\obj\Debug\ChislennieMethody_Lab2.pdb
+C:\Users\gekas\Documents\ChislennieMethody\ChislennieMethody_Lab2\bin\Debug\ChislennieMethody_Lab2.exe.config
+C:\Users\gekas\Documents\ChislennieMethody\ChislennieMethody_Lab2\obj\Debug\ChislennieMethody_Lab2.exe
+C:\Users\gekas\Documents\ChislennieMethody\ChislennieMethody_Lab2\obj\Debug\ChislennieMethody_Lab2.pdb
+C:\Users\gekas\Documents\ChislennieMethody\ChislennieMethody_Lab2\bin\Debug\ChislennieMethody_Lab2.exe
+C:\Users\gekas\Documents\ChislennieMethody\ChislennieMethody_Lab2\bin\Debug\ChislennieMethody_Lab2.pdb
+C:\Users\gekas\Documents\ChislennieMethody\ChislennieMethody_Lab2\obj\Debug\ChislennieMethody_Lab2.csprojResolveAssemblyReference.cache
