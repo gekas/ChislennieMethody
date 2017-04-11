@@ -10,16 +10,17 @@ namespace ChislennieMethody_Lab2
     {
         static void Main(string[] args)
         {
-            //double[,] matrix = { { 3,2,1,5},
-            //                     { 2,3,1,1},
-            //                     { 2,1,3,11}
-            //                   };
             //var xx = Gaus.Calculate(matrix);
 
             //for(int i =0; i < xx.Length;i++)
             //    Console.WriteLine(xx[i]);
 
-            Holetski h = new Holetski();
+            double[,] array = { { 2,-1,-1},
+                                 { 3,4,-2 },
+                                 { 3,-2,4}
+                               };
+
+            Holetski h = new Holetski(array);
             Console.ReadLine();
 
         }
