@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ChislennieMethody_Lab2
 {
@@ -15,14 +11,17 @@ namespace ChislennieMethody_Lab2
             //for(int i =0; i < xx.Length;i++)
             //    Console.WriteLine(xx[i]);
 
-            double[,] array = { { 2,-1,-1},
-                                 { 3,4,-2 },
-                                 { 3,-2,4}
-                               };
+            double[][] array = new double[3][];
+            array[0] = new double[]{ 2,-1,-1 };
+            array[1] = new double[] { 3, 4, -2 };
+            array[2] = new double[] { 3, -2, 4 };
 
-            Holetski h = new Holetski(array);
+            double[] results = { 4, 11, 11 };
+
+            var result = Holetski.method(array, results);
+            for (int i = 0; i < result.Length; i++) Console.WriteLine(i+": "+result[i]);
+
             Console.ReadLine();
-
         }
     }
 }
