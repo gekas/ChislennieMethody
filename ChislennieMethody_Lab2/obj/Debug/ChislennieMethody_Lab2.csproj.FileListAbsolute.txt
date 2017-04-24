@@ -16,3 +16,5 @@ C:\Users\eherbut\Documents\Visual Studio 2015\Projects\ChislennieMethody\Chislen
 C:\Users\eherbut\Documents\Visual Studio 2015\Projects\ChislennieMethody\ChislennieMethody_Lab2\bin\Debug\ChislennieMethody_Lab2.exe
 C:\Users\eherbut\Documents\Visual Studio 2015\Projects\ChislennieMethody\ChislennieMethody_Lab2\bin\Debug\ChislennieMethody_Lab2.pdb
 C:\Users\eherbut\Documents\Visual Studio 2015\Projects\ChislennieMethody\ChislennieMethody_Lab2\obj\Debug\ChislennieMethody_Lab2.csprojResolveAssemblyReference.cache
+C:\Users\gekas\Documents\ChislennieMethody\ChislennieMethody_Lab2\bin\Debug\Utils.dll
+C:\Users\gekas\Documents\ChislennieMethody\ChislennieMethody_Lab2\bin\Debug\Utils.pdb

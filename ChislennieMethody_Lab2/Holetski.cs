@@ -4,9 +4,8 @@ namespace ChislennieMethody_Lab2
 {
     class Holetski
     {
-        public static double[] method(double[][] a, double[] coeffs)
+        public static double[] Calculate(double[][] a, double[] coeffs)
         {
-            Console.WriteLine(a);
             double[][] b = new double[3][];
             double[][] c = new double[3][];
             for (int i = 0; i < b.GetLength(0); i++)
@@ -15,7 +14,7 @@ namespace ChislennieMethody_Lab2
                 c[i] = new double[3];
             }
 
-            calculateBCmatrix(a, b, c);// Получение треугольных матриц B u C
+            CreateBC(a, b, c);
             Console.WriteLine("matrix B: ");
             Matrix.Print(b);
             Console.WriteLine("matrix C: ");
@@ -23,20 +22,14 @@ namespace ChislennieMethody_Lab2
             return calculateResults(b, c, coeffs);
         }
 
-        //Процедура получения двух треугольных матриц, произведение которых равно исходной матрице
-        private static void calculateBCmatrix(double[][] a, double[][] b, double[][] c)
+        //B*C = A
+        private static void CreateBC(double[][] a, double[][] b, double[][] c)
         {
             int n = a.GetLength(0);
             //матрица С должна содержать 1 по главной диагонали
             for (int i = 0; i < n; i++)
             {
-                for (int j = 0; j < n; j++)
-                {
-                    if (j == j)
-                    {
-                        c[j][j] = 1;
-                    }
-                }
+                c[i][i] = 1;
             }
             //заполняем матрицы В и С
             for (int i = 0; i < n; i++)

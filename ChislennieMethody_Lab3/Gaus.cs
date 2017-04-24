@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace ChislennieMethody_Lab2
+namespace Lab3
 {
-    class Gaus
+    public class Gauss
     {
         public static double[] Calculate(double[][] a, double[] b)
         {
@@ -22,7 +22,7 @@ namespace ChislennieMethody_Lab2
             for (int k = 0; k < n; k++)
             {
                 double max = Math.Abs(matrixA[k][k]);
-                // Поиск строки с максимальным a[i][k]
+               
                 int index = k;
                 for (int i = k + 1; i < n; i++)
                 {
@@ -32,28 +32,27 @@ namespace ChislennieMethody_Lab2
                         index = i;
                     }
                 }
-                //Столбец содержит все 0
+
                 if (max == 0)
                 {
-                    throw new ArithmeticException("Решение получить невозможно из-за нулевого столбца " + index);
+                    throw new ArithmeticException("Нулевой столбцец " + index);
                 }
-                //Сортировка матрицы значений А
+
                 for (int j = 0; j < n; j++)
                 {
                     double temp = matrixA[k][j];
                     matrixA[k][j] = matrixA[index][j];
                     matrixA[index][j] = temp;
-                } //Обмен строк в матрице В
+                } 
                 double temp1 = matrixB[k];
                 matrixB[k] = matrixB[index];
                 matrixB[index] = temp1;
 
-                // Нормализация уравнений
                 for (int i = k; i < n; i++)
                 {
                     double temp = matrixA[i][k];
                     if (Math.Abs(temp) == 0)
-                    {// для нулевого коэффициента пропустить
+                    {
                         continue;
                     }
                     for (int j = 0; j < n; j++)
@@ -62,7 +61,7 @@ namespace ChislennieMethody_Lab2
                     }
                     matrixB[i] = matrixB[i] / temp;
                     if (i == k)
-                    {// уравнение не вычитать само из себя. Продолжить перебор
+                    {
                         continue;
                     }
                     for (int j = 0; j < n; j++)
@@ -72,7 +71,7 @@ namespace ChislennieMethody_Lab2
                     matrixB[i] = matrixB[i] - matrixB[k];
                 }
             }
-            // обратная подстановка
+
             for (int k = n - 1; k >= 0; k--)
             {
                 results[k] = matrixB[k];

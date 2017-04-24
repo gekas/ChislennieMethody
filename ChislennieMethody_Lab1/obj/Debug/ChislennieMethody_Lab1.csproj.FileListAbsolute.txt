@@ -13,3 +13,8 @@ C:\Users\eherbut\Documents\Visual Studio 2015\Projects\ChislennieMethody\Chislen
 C:\Users\eherbut\Documents\Visual Studio 2015\Projects\ChislennieMethody\ChislennieMethody_Lab1\obj\Debug\ChislennieMethody_Lab1.csprojResolveAssemblyReference.cache
 C:\Users\eherbut\Documents\Visual Studio 2015\Projects\ChislennieMethody\ChislennieMethody_Lab1\obj\Debug\ChislennieMethody_Lab1.exe
 C:\Users\eherbut\Documents\Visual Studio 2015\Projects\ChislennieMethody\ChislennieMethody_Lab1\obj\Debug\ChislennieMethody_Lab1.pdb
+C:\Users\gekas\Documents\ChislennieMethody\ChislennieMethody_Lab1\bin\Debug\ChislennieMethody_Lab1.exe
+C:\Users\gekas\Documents\ChislennieMethody\ChislennieMethody_Lab1\bin\Debug\ChislennieMethody_Lab1.pdb
+C:\Users\gekas\Documents\ChislennieMethody\ChislennieMethody_Lab1\bin\Debug\Utils.dll
+C:\Users\gekas\Documents\ChislennieMethody\ChislennieMethody_Lab1\bin\Debug\Utils.pdb
+C:\Users\gekas\Documents\ChislennieMethody\ChislennieMethody_Lab1\obj\Debug\ChislennieMethody_Lab1.csprojResolveAssemblyReference.cache
