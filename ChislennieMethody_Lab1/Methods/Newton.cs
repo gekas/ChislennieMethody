@@ -10,7 +10,7 @@ namespace ChislennieMethody_Lab1.Methods
     {
         public Newton(double a, double b, double eps, Func<double, Double> f, Func<double, double> f1, Func<double, double> f2)
         {
-            Console.WriteLine("Метод Ньютона");
+            Console.WriteLine("\n\n\nМетод Ньютона");
             Console.WriteLine($"f'({a}) = {f1(a)}");
             Console.WriteLine($"f'({b}) = {f1(b)}");
 

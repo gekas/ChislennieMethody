@@ -6,7 +6,7 @@ namespace ChislennieMethody_Lab1.Methods
     {
         public Chords(double a, double b, double eps, Func<double, Double> f, Func<double, double> f1, Func<double, double> f2)
         {
-            Console.WriteLine("Метод хорд");
+            Console.WriteLine("\n\n\nМетод хорд");
             Console.WriteLine($"f'({a}) = {f1(a)}");
             Console.WriteLine($"f'({b}) = {f1(b)}");
             var M1 = Math.Max(f1(a), f1(b));
@@ -20,10 +20,10 @@ namespace ChislennieMethody_Lab1.Methods
 
             var x = a;
 
-            while (f(x) * f2(x) >= 0)
-            {
+           // while (f(x) * f2(x) >= 0)
+           // {
                 x = x + eps;
-            }
+           // }
 
             PrintTable.PrintRow("n", "Xn", "|Xn-X(n-1)|", "|Xn-X(n-1)| < gamma");
             PrintTable.PrintRow(0, x, "-", "-");

@@ -4,14 +4,22 @@ namespace ChislennieMethody_Lab2
 {
     class Program
     {
+
         static void Main(string[] args)
         {
             double[][] array = new double[3][];
-            array[0] = new double[] { 3, -1, -1 };
-            array[1] = new double[] { 1, 1, -4 };
-            array[2] = new double[] { -2, 6, -1 };
 
-            double[] results = { -1, -10, 1 };
+            //array[0] = new double[] { 3, -1, -1 };
+            //array[1] = new double[] { 1, 1, -4 };
+            //array[2] = new double[] { -2, 6, -1 };
+
+            //double[] results = { -1, -10, 1 };
+
+            array[0] = new double[] { 3, 1, -1 };
+            array[1] = new double[] { -2, 4, -1 };
+            array[2] = new double[] { 1, 1, -4 };
+
+            double[] results = { 2, 0, -6 };
 
             var result = Holetski.Calculate(array, results);
             Console.WriteLine("Холецкий: ");
@@ -22,7 +30,9 @@ namespace ChislennieMethody_Lab2
             for (int i = 0; i < result.Length; i++) Console.WriteLine(i + ": " + result[i]);
 
             double eps = 0.000001;
-            result = SimpleIteration.Calculate(array, results, eps);
+            //result = SimpleIteration.Calculate(array, eps);
+            result = new SimpleIteration(array, results).GetMatrixAnswer();
+
             Console.WriteLine("Простой итерации: ");
             for (int i = 0; i < result.Length; i++) Console.WriteLine(i + ": " + result[i]);
 

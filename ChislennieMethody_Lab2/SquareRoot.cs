@@ -8,6 +8,8 @@ namespace ChislennieMethody_Lab2
 {
     class SquareRoot
     {
+
+
         public static double[] method(double[][] a, double[] coeffs)
         {
             int n = a.Length;

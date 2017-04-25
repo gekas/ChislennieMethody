@@ -6,7 +6,7 @@ namespace ChislennieMethody_Lab1.Methods
     {
         public HalfDeviation(double a, double b, Func<double, double> f)
         {
-            Console.WriteLine("Метод деления пополам: ");
+            Console.WriteLine("\n\n\nМетод деления пополам: ");
             var iterationNumber = Math.Ceiling(Math.Log((3 - 2) / Math.Pow(10, -5), 2) - 1);
             Console.WriteLine($"Итераций: {iterationNumber}");
 

@@ -17,7 +17,7 @@ namespace ChislennieMethody_Lab1.Methods
         /// <param name="f1">Первая производная</param>
         public SimpleIteration(double a, double b, double eps, Func<double, Double> f, Func<double, double> f1)
         {
-            Console.WriteLine("Метод простой итерации");
+            Console.WriteLine("\n\n\nМетод простой итерации");
             // Переходим от заданого уравнения к уравнению удобному для итерирования: x = x - alpha*f(x)
             var M1 = Math.Max(f1(a), f1(b));
             var m1 = Math.Min(f1(a), f1(b));
