@@ -20,6 +20,7 @@ namespace ChislennieMethody_Lab2
             array[2] = new double[] { 1, 1, -4 };
 
             double[] results = { 2, 0, -6 };
+
             //array[0] = new double[] { 1, 3, -3 };
             //array[1] = new double[] { 3, 10, -11 };
             //array[2] = new double[] { -3, -11, 22 };
@@ -41,33 +42,30 @@ namespace ChislennieMethody_Lab2
             Console.WriteLine("Простой итерации: ");
             for (int i = 0; i < result.Length; i++) Console.WriteLine(i + ": " + result[i]);
 
-            //result = SquareRoot.method(array, results);
-            //Console.WriteLine("Квадратного корня: ");
-            //for (int i = 0; i < result.Length; i++) Console.WriteLine(i + ": " + result[i]);
-
-            SquareRoot sr = new SquareRoot(array, results);
-            sr.Solution();
-
-            //double[][] array1 = new double[3][];
-            //array1[0] = new double[] { 2, -1, 1 };
-            //array1[1] = new double[] { 3, 5, -2 };
-            //array1[2] = new double[] { 1, -4, 10 };
-
-            //double[] results1 = {-3, 1, 0 };
-
-            //double eps = 0.000001;
-            //var result = SimpleIteration.Calculate(array1, results1, eps);
-            //for (int i = 0; i < result.Length; i++) Console.WriteLine(i+": "+result[i]);
 
 
-            //double[][] array1 = new double[3][];
-            //array1[0] = new double[] { 1, -3, 2 };
-            //array1[1] = new double[] { -3, 10, -5 };
-            ////array1[2] = new double[] { 2, -5, 9 };
 
-            //double[] results1 = { 10, 12, 14 };
-            //var result = SquareRoot.method(array1, results1);
+            // Квадратного корня (На симметричнйо матрице)
+            double[,] Mtx = new double[3,3];
+            Mtx[0, 0] = 2;
+            Mtx[0, 1] = 1;
+            Mtx[0, 2] = 4;
 
+            Mtx[1, 0] = 1;
+            Mtx[1, 1] = 1;
+            Mtx[1, 2] = 3;
+
+            Mtx[2, 0] = 4;
+            Mtx[2, 1] = 3;
+            Mtx[2, 2] = 14;
+
+            double[,] S;
+
+            double[] B = { 16,12,52};
+            var  sr = SquareRoot.Calculate(out S, Mtx, B);
+
+            Console.WriteLine("Квадратного корня: ");
+            for (int i = 0; i < result.Length; i++) Console.WriteLine(i + ": " + sr[i]);
             Console.ReadLine();
         }
     }
