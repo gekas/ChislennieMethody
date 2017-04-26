@@ -20,6 +20,11 @@ namespace ChislennieMethody_Lab2
             array[2] = new double[] { 1, 1, -4 };
 
             double[] results = { 2, 0, -6 };
+            //array[0] = new double[] { 1, 3, -3 };
+            //array[1] = new double[] { 3, 10, -11 };
+            //array[2] = new double[] { -3, -11, 22 };
+
+            //double[] results = { 11, -2, 10 };
 
             var result = Holetski.Calculate(array, results);
             Console.WriteLine("Холецкий: ");
@@ -36,9 +41,12 @@ namespace ChislennieMethody_Lab2
             Console.WriteLine("Простой итерации: ");
             for (int i = 0; i < result.Length; i++) Console.WriteLine(i + ": " + result[i]);
 
-            result = SquareRoot.method(array, results);
-            Console.WriteLine("Квадратного корня: ");
-            for (int i = 0; i < result.Length; i++) Console.WriteLine(i + ": " + result[i]);
+            //result = SquareRoot.method(array, results);
+            //Console.WriteLine("Квадратного корня: ");
+            //for (int i = 0; i < result.Length; i++) Console.WriteLine(i + ": " + result[i]);
+
+            SquareRoot sr = new SquareRoot(array, results);
+            sr.Solution();
 
             //double[][] array1 = new double[3][];
             //array1[0] = new double[] { 2, -1, 1 };

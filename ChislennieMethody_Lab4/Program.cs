@@ -11,7 +11,7 @@ namespace ChislennieMethody_Lab4
         static void Main(string[] args)
         {
             double y;
-            y = integralpram(0, 1, 10, (x)=>(9*x*x*x / Math.Sqrt(1+3*x*x)));
+            y = integralpram(1, 2, 10, (x)=>((2*x+0.6)*Math.Cos(x/2)));
 
             Console.ReadLine();
         }
